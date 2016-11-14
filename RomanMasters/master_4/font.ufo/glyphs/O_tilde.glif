@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Otilde" format="1">
+	<unicode hex="00D5"/>
+	<advance width="707"/>
+	<outline>
+		<contour>
+			<point x="175" y="731" type="curve"/>
+			<point x="196" y="725" type="line"/>
+			<point x="213" y="776"/>
+			<point x="234" y="808"/>
+			<point x="268" y="808" type="curve" smooth="yes"/>
+			<point x="299" y="808"/>
+			<point x="322" y="778"/>
+			<point x="348" y="756" type="curve" smooth="yes"/>
+			<point x="370" y="738"/>
+			<point x="390" y="722"/>
+			<point x="428" y="722" type="curve" smooth="yes"/>
+			<point x="492" y="722"/>
+			<point x="519" y="772"/>
+			<point x="533" y="852" type="curve"/>
+			<point x="511" y="858" type="line"/>
+			<point x="495" y="807"/>
+			<point x="475" y="776"/>
+			<point x="440" y="776" type="curve" smooth="yes"/>
+			<point x="409" y="776"/>
+			<point x="386" y="805"/>
+			<point x="360" y="827" type="curve" smooth="yes"/>
+			<point x="337" y="845"/>
+			<point x="316" y="861"/>
+			<point x="279" y="861" type="curve" smooth="yes"/>
+			<point x="217" y="861"/>
+			<point x="187" y="809"/>
+		</contour>
+		<component base="O"/>
+	</outline>
+</glyph>

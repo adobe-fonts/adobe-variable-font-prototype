@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="adieresis" format="1">
+	<unicode hex="00E4"/>
+	<advance width="508"/>
+	<outline>
+		<contour>
+			<point x="353" y="597" type="curve" smooth="yes"/>
+			<point x="385" y="597"/>
+			<point x="411" y="621"/>
+			<point x="411" y="653" type="curve" smooth="yes"/>
+			<point x="411" y="685"/>
+			<point x="385" y="709"/>
+			<point x="353" y="709" type="curve" smooth="yes"/>
+			<point x="321" y="709"/>
+			<point x="294" y="685"/>
+			<point x="294" y="653" type="curve" smooth="yes"/>
+			<point x="294" y="621"/>
+			<point x="321" y="597"/>
+		</contour>
+		<contour>
+			<point x="145" y="597" type="curve" smooth="yes"/>
+			<point x="177" y="597"/>
+			<point x="204" y="621"/>
+			<point x="204" y="653" type="curve" smooth="yes"/>
+			<point x="204" y="685"/>
+			<point x="177" y="709"/>
+			<point x="145" y="709" type="curve" smooth="yes"/>
+			<point x="113" y="709"/>
+			<point x="87" y="685"/>
+			<point x="87" y="653" type="curve" smooth="yes"/>
+			<point x="87" y="621"/>
+			<point x="113" y="597"/>
+		</contour>
+		<component base="a"/>
+	</outline>
+</glyph>

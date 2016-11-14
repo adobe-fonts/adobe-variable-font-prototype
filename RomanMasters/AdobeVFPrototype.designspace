@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis initial="0.0" maximum="1000.0" minimum="0.0" name="weight" tag="wght" />
+        <axis initial="0.0" maximum="100.0" minimum="0.0" name="custom" tag="ct**" />
+    </axes>
+    <sources>
+        <source filename="master_0/font.ufo" name="master.Adobe VF Prototype.Master_0.0">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+        </source>
+        <source filename="master_1/font.ufo" name="master.Adobe VF Prototype.Master_1.1">
+            <location>
+                <dimension name="weight" xvalue="368" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+        </source>
+        <source filename="master_2/font.ufo" name="master.Adobe VF Prototype.Master_2.2">
+            <lib copy="1" />
+            <groups copy="1" />
+            <info copy="1" />
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+        </source>
+        <source filename="master_3/font.ufo" name="master.Adobe VF Prototype.Master_3.3">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="custom" xvalue="100" />
+            </location>
+        </source>
+        <source filename="master_0/font.ufo" name="master.Adobe VF Prototype.Master_0.4">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="custom" xvalue="100" />
+            </location>
+        </source>
+        <source filename="master_4/font.ufo" name="master.Adobe VF Prototype.Master_4.5">
+            <location>
+                <dimension name="weight" xvalue="368" />
+                <dimension name="custom" xvalue="100" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-ExtraLight.ufo" postscriptfontname="AdobeVFPrototype-ExtraLight" stylename="ExtraLight">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Light.ufo" postscriptfontname="AdobeVFPrototype-Light" stylename="Light">
+            <location>
+                <dimension name="weight" xvalue="150" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Regular.ufo" postscriptfontname="AdobeVFPrototype-Regular" stylename="Regular">
+            <location>
+                <dimension name="weight" xvalue="394" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Semibold.ufo" postscriptfontname="AdobeVFPrototype-Semibold" stylename="Semibold">
+            <location>
+                <dimension name="weight" xvalue="600" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Bold.ufo" postscriptfontname="AdobeVFPrototype-Bold" stylename="Bold">
+            <location>
+                <dimension name="weight" xvalue="824" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+            <glyphs>
+                <glyph name="dollar" unicode="0x24">
+                    <location>
+                        <dimension name="weight" xvalue="824" />
+                        <dimension name="custom" xvalue="0" />
+                    </location>
+                    <masters>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+                <glyph name="cent" unicode="0xa2">
+                    <location>
+                        <dimension name="weight" xvalue="824" />
+                        <dimension name="custom" xvalue="0" />
+                    </location>
+                    <masters>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+            </glyphs>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Black.ufo" postscriptfontname="AdobeVFPrototype-Black" stylename="Black">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="custom" xvalue="0" />
+            </location>
+            <glyphs>
+                <glyph name="dollar" unicode="0x24">
+                    <location>
+                        <dimension name="weight" xvalue="1000" />
+                        <dimension name="custom" xvalue="0" />
+                    </location>
+                    <masters>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+                <glyph name="cent" unicode="0xa2">
+                    <location>
+                        <dimension name="weight" xvalue="1000" />
+                        <dimension name="custom" xvalue="0" />
+                    </location>
+                    <masters>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+            </glyphs>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-BlackMediumcustom.ufo" postscriptfontname="AdobeVFPrototype-BlackMediumcustom" stylename="Black Medium custom">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="custom" xvalue="50" />
+            </location>
+            <glyphs>
+                <glyph name="dollar" unicode="0x24">
+                    <location>
+                        <dimension name="weight" xvalue="1000" />
+                        <dimension name="custom" xvalue="50" />
+                    </location>
+                    <masters>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+                <glyph name="cent" unicode="0xa2">
+                    <location>
+                        <dimension name="weight" xvalue="1000" />
+                        <dimension name="custom" xvalue="50" />
+                    </location>
+                    <masters>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+            </glyphs>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-BlackHighcustom.ufo" postscriptfontname="AdobeVFPrototype-BlackHighcustom" stylename="Black High custom">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="custom" xvalue="100" />
+            </location>
+            <glyphs>
+                <glyph name="dollar" unicode="0x24">
+                    <location>
+                        <dimension name="weight" xvalue="1000" />
+                        <dimension name="custom" xvalue="100" />
+                    </location>
+                    <masters>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+                <glyph name="cent" unicode="0xa2">
+                    <location>
+                        <dimension name="weight" xvalue="1000" />
+                        <dimension name="custom" xvalue="100" />
+                    </location>
+                    <masters>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="0" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                            <location>
+                                <dimension name="weight" xvalue="1000" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                            <location>
+                                <dimension name="weight" xvalue="0" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                            <location>
+                                <dimension name="weight" xvalue="368" />
+                                <dimension name="custom" xvalue="100" />
+                            </location>
+                        </master>
+                    </masters>
+                </glyph>
+            </glyphs>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="2">
+    <!-- Superpolator Designspace Object -->
+    <!-- info -->
+    <version superpolator="2"/>
+    <!-- measurements -->
+    <!-- application data -->
+    <data name="horizontalPreviewAxis" value="weight"/>
+    <data name="lineInverted" value="False"/>
+    <data name="lineViewFilled" value="True"/>
+    <data name="lineStacked" value="sequence"/>
+    <data name="generateFontsAtFolder" value="../_instances"/>
+    <data name="previewtext" value="$$¢¢ Adobe Variable Font Prototype"/>
+    <data name="verticalPreviewAxis" value="contrast"/>
+    <!-- don't generate these glyphs -->
+    <ignore glyphs=""/>
+    <!-- rules -->
+    <rule enabled="1" logic="all" resultfalse="cent" resulttrue="cent.nostroke">
+        <condition axisname="weight" operator="&gt;=" xvalue="700"/>
+    </rule>
+    <rule enabled="1" logic="all" resultfalse="dollar" resulttrue="dollar.nostroke">
+        <condition axisname="weight" operator="&gt;=" xvalue="700"/>
+    </rule>
+    <!-- axis definitions -->
+    <axis initialvalue="0" maximum="1000" minimum="0" name="weight" shortname="wt">
+        <color a="1.000" b="0.000" g="0.821" r="1.000"/>
+    </axis>
+    <axis initialvalue="0" maximum="100" minimum="0" name="contrast" shortname="ct">
+        <color a="1.000" b="0.614" g="0.000" r="1.000"/>
+    </axis>
+    <!-- master definitions -->
+    <master familyname="Adobe VF Prototype" filename="master_0/font.ufo" sortorder="0" stylename="Master_0">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="0"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Adobe VF Prototype" filename="master_1/font.ufo" sortorder="1" stylename="Master_1">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="368"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Adobe VF Prototype" filename="master_2/font.ufo" sortorder="2" stylename="Master_2">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="1000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </master>
+    <master familyname="Adobe VF Prototype" filename="master_3/font.ufo" sortorder="3" stylename="Master_3">
+        <location>
+            <dimension name="contrast" xvalue="100"/>
+            <dimension name="weight" xvalue="1000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Adobe VF Prototype" filename="master_0/font.ufo" sortorder="4" stylename="Master_0">
+        <location>
+            <dimension name="contrast" xvalue="100"/>
+            <dimension name="weight" xvalue="0"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Adobe VF Prototype" filename="master_4/font.ufo" sortorder="5" stylename="Master_4">
+        <location>
+            <dimension name="contrast" xvalue="100"/>
+            <dimension name="weight" xvalue="368"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <!-- instance definitions -->
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-ExtraLight.ufo" sortorder="6" stylename="ExtraLight">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="0"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Light.ufo" sortorder="7" stylename="Light">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="150"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Regular.ufo" sortorder="8" stylename="Regular">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="394"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Semibold.ufo" sortorder="9" stylename="Semibold">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="600"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Bold.ufo" sortorder="10" stylename="Bold">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="824"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-Black.ufo" sortorder="11" stylename="Black">
+        <location>
+            <dimension name="contrast" xvalue="0"/>
+            <dimension name="weight" xvalue="1000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-BlackMedCont.ufo" sortorder="12" stylename="Black Medium Contrast">
+        <location>
+            <dimension name="contrast" xvalue="50"/>
+            <dimension name="weight" xvalue="1000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Adobe VF Prototype" filename="_instances/AdobeVFPrototype-BlackHigCont.ufo" sortorder="13" stylename="Black High Contrast">
+        <location>
+            <dimension name="contrast" xvalue="100"/>
+            <dimension name="weight" xvalue="1000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+</designspace>

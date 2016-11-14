@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="scaron" format="1">
+	<unicode hex="0161"/>
+	<advance width="426"/>
+	<outline>
+		<contour>
+			<point x="110" y="716" type="line"/>
+			<point x="100" y="706" type="line"/>
+			<point x="218" y="570" type="line"/>
+			<point x="238" y="570" type="line"/>
+			<point x="356" y="706" type="line"/>
+			<point x="346" y="716" type="line"/>
+			<point x="219" y="599" type="line"/>
+			<point x="237" y="599" type="line"/>
+		</contour>
+		<component base="s"/>
+	</outline>
+</glyph>
