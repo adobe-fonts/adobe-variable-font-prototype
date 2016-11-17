@@ -47,6 +47,12 @@ listed below.
 [Adobe Latin 2]: https://github.com/adobe-type-tools/adobe-latin-charsets#adobe-latin-2-adobe-western-2
 
 
+## Downloading the font
+
+* [Latest release](../../releases/latest)
+* [All releases](../../releases)
+
+
 ## Building the font from source
 
 ### Requirements
