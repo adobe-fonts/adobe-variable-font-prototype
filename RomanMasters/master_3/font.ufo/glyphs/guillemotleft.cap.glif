@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="guillemotleft.cap" format="1">
-	<advance width="578"/>
-	<outline>
-		<component base="guilsinglleft" yOffset="40"/>
-		<component base="guilsinglleft" xOffset="224" yOffset="40"/>
-	</outline>
-</glyph>
