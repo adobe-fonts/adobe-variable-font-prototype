@@ -1,0 +1,3 @@
+feature kern {
+	include (../kern.fea);
+} kern;

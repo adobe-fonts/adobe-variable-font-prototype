@@ -1,0 +1,38 @@
+table head {
+	FontRevision 1.001;
+} head;
+
+
+table name {
+	nameid 0 "Copyright 2016 Adobe Systems Incorporated (http://www.adobe.com/).";
+	nameid 0 1 "Copyright 2016 Adobe Systems Incorporated (http://www.adobe.com/).";
+	nameid 11 "http://www.adobe.com/type";
+	nameid 11 1 "http://www.adobe.com/type";
+	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+	nameid 13 1 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+	nameid 14 "http://scripts.sil.org/OFL";
+	nameid 14 1 "http://scripts.sil.org/OFL";
+	nameid 7 "Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.";
+	nameid 7 1 "Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.";
+	nameid 8 "Adobe Systems Incorporated";
+	nameid 8 1 "Adobe Systems Incorporated";
+	nameid 9 "Frank Grie\00dfhammer";
+	nameid 9 1 "Frank Grie\a7hammer";
+} name;
+
+
+table hhea {
+    # NOTE: The OS/2.winAscent and OS/2.winDescent values are set by MakeOTF and vary depending on the font's bounding box
+    Ascender 918;       # Must match OS/2.winAscent for cross-platform consistency
+    Descender -335;     # Must match OS/2.winDescent for cross-platform consistency
+    LineGap 0;          # Must be zero for cross-platform consistency
+} hhea;
+
+
+table BASE {
+	HorizAxis.BaseTagList ideo romn;
+	HorizAxis.BaseScriptList
+	latn romn -165 0,
+	DFLT romn -165 0;
+} BASE;
+
