@@ -6,4 +6,4 @@ table OS/2 {
 } OS/2;
 
 include (../../../familyGSUB.fea);
-#include (../../../familyGPOS.fea);
+include (../../../familyGPOS.fea);

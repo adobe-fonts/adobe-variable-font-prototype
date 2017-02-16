@@ -68,10 +68,8 @@
 	<string>L_.glif</string>
 	<key>Lslash</key>
 	<string>L_slash.glif</string>
-<!--
 	<key>M</key>
 	<string>M_.glif</string>
- -->
 	<key>N</key>
 	<string>N_.glif</string>
 	<key>Ntilde</key>
@@ -472,10 +470,8 @@
 	<string>periodcentered.glif</string>
 	<key>perthousand</key>
 	<string>perthousand.glif</string>
-<!--
 	<key>pi</key>
 	<string>pi.glif</string>
- -->
 	<key>plus</key>
 	<string>plus.glif</string>
 	<key>plusminus</key>
@@ -556,10 +552,8 @@
 	<string>summation.glif</string>
 	<key>t</key>
 	<string>t.glif</string>
-<!--
 	<key>thorn</key>
 	<string>thorn.glif</string>
- -->
 	<key>three</key>
 	<string>three.glif</string>
 	<key>three.cap</key>
