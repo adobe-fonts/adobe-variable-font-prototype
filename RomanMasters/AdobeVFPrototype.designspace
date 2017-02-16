@@ -14,15 +14,15 @@
             </location>
         </source>
         <source familyname="Adobe VF Prototype" filename="master_1/font.ufo" name="source_Adobe VF Prototype_Master_1_weight_368.000_contrast_0.000" stylename="Master_1">
+            <lib copy="1" />
+            <groups copy="1" />
+            <info copy="1" />
             <location>
                 <dimension name="weight" xvalue="368" />
                 <dimension name="contrast" xvalue="0" />
             </location>
         </source>
         <source familyname="Adobe VF Prototype" filename="master_2/font.ufo" name="source_Adobe VF Prototype_Master_2_weight_1000.000_contrast_0.000" stylename="Master_2">
-            <lib copy="1" />
-            <groups copy="1" />
-            <info copy="1" />
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="0" />
