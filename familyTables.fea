@@ -18,6 +18,7 @@ table name {
 	nameid 8 1 "Adobe Systems Incorporated";
 	nameid 9 "Frank Grie\00dfhammer";
 	nameid 9 1 "Frank Grie\a7hammer";
+	nameid 19 "AaBbCcDdEeFfGg$\00A2";
 } name;
 
 
