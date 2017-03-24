@@ -48,7 +48,7 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-ExtraLight.ufo" postscriptfontname="Adobe VF Prototype-ExtraLight" stylename="ExtraLight">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-ExtraLight.ufo" postscriptfontname="AdobeVFPrototype-ExtraLight" stylename="ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="contrast" xvalue="0" />
@@ -56,7 +56,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Light.ufo" postscriptfontname="Adobe VF Prototype-Light" stylename="Light">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Light.ufo" postscriptfontname="AdobeVFPrototype-Light" stylename="Light">
             <location>
                 <dimension name="weight" xvalue="150" />
                 <dimension name="contrast" xvalue="0" />
@@ -64,7 +64,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Regular.ufo" postscriptfontname="Adobe VF Prototype-Regular" stylename="Regular">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Regular.ufo" postscriptfontname="AdobeVFPrototype-Regular" stylename="Regular">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="contrast" xvalue="0" />
@@ -72,7 +72,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Semibold.ufo" postscriptfontname="Adobe VF Prototype-Semibold" stylename="Semibold">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Semibold.ufo" postscriptfontname="AdobeVFPrototype-Semibold" stylename="Semibold">
             <location>
                 <dimension name="weight" xvalue="600" />
                 <dimension name="contrast" xvalue="0" />
@@ -80,7 +80,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Bold.ufo" postscriptfontname="Adobe VF Prototype-Bold" stylename="Bold">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Bold.ufo" postscriptfontname="AdobeVFPrototype-Bold" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="824" />
                 <dimension name="contrast" xvalue="0" />
@@ -178,7 +178,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black.ufo" postscriptfontname="Adobe VF Prototype-Black" stylename="Black">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black.ufo" postscriptfontname="AdobeVFPrototype-Black" stylename="Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="0" />
@@ -276,7 +276,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black Medium Contrast.ufo" postscriptfontname="Adobe VF Prototype-Black Medium Contrast" stylename="Black Medium Contrast">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-BlackMediumContrast.ufo" postscriptfontname="AdobeVFPrototype-BlackMediumContrast" stylename="Black Medium Contrast">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="50" />
@@ -374,7 +374,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black High Contrast.ufo" postscriptfontname="Adobe VF Prototype-Black High Contrast" stylename="Black High Contrast">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-BlackHighContrast.ufo" postscriptfontname="AdobeVFPrototype-BlackHighContrast" stylename="Black High Contrast">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="100" />
