@@ -48,7 +48,7 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-ExtraLight.ufo" name="instance_Adobe VF Prototype_ExtraLight_weight_0.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-ExtraLight" stylename="ExtraLight">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-ExtraLight.ufo" name="instance_Adobe VF Prototype_ExtraLight_weight_0.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-ExtraLight" stylename="ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="contrast" xvalue="0" />
@@ -56,7 +56,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-Light.ufo" name="instance_Adobe VF Prototype_Light_weight_150.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Light" stylename="Light">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Light.ufo" name="instance_Adobe VF Prototype_Light_weight_150.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Light" stylename="Light">
             <location>
                 <dimension name="weight" xvalue="150" />
                 <dimension name="contrast" xvalue="0" />
@@ -64,7 +64,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-Regular.ufo" name="instance_Adobe VF Prototype_Regular_weight_394.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Regular" stylename="Regular">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Regular.ufo" name="instance_Adobe VF Prototype_Regular_weight_394.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Regular" stylename="Regular">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="contrast" xvalue="0" />
@@ -72,7 +72,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-Semibold.ufo" name="instance_Adobe VF Prototype_Semibold_weight_600.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Semibold" stylename="Semibold">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Semibold.ufo" name="instance_Adobe VF Prototype_Semibold_weight_600.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Semibold" stylename="Semibold">
             <location>
                 <dimension name="weight" xvalue="600" />
                 <dimension name="contrast" xvalue="0" />
@@ -80,7 +80,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-Bold.ufo" name="instance_Adobe VF Prototype_Bold_weight_824.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Bold" stylename="Bold">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Bold.ufo" name="instance_Adobe VF Prototype_Bold_weight_824.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Bold" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="824" />
                 <dimension name="contrast" xvalue="0" />
@@ -178,7 +178,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-Black.ufo" name="instance_Adobe VF Prototype_Black_weight_1000.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Black" stylename="Black">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black.ufo" name="instance_Adobe VF Prototype_Black_weight_1000.000_contrast_0.000" postscriptfontname="Adobe VF Prototype-Black" stylename="Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="0" />
@@ -276,7 +276,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-Black Medium Contrast.ufo" name="instance_Adobe VF Prototype_Black Medium Contrast_weight_1000.000_contrast_50.000" postscriptfontname="Adobe VF Prototype-Black Medium Contrast" stylename="Black Medium Contrast">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black Medium Contrast.ufo" name="instance_Adobe VF Prototype_Black Medium Contrast_weight_1000.000_contrast_50.000" postscriptfontname="Adobe VF Prototype-Black Medium Contrast" stylename="Black Medium Contrast">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="50" />
@@ -374,7 +374,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/Adobe VF Prototype-Black High Contrast.ufo" name="instance_Adobe VF Prototype_Black High Contrast_weight_1000.000_contrast_100.000" postscriptfontname="Adobe VF Prototype-Black High Contrast" stylename="Black High Contrast">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black High Contrast.ufo" name="instance_Adobe VF Prototype_Black High Contrast_weight_1000.000_contrast_100.000" postscriptfontname="Adobe VF Prototype-Black High Contrast" stylename="Black High Contrast">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="100" />
