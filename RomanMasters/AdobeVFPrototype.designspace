@@ -113,19 +113,19 @@
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
@@ -157,19 +157,19 @@
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
@@ -211,19 +211,19 @@
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
@@ -255,19 +255,19 @@
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
@@ -285,7 +285,7 @@
                 <glyph name="dollar" unicode="0x24">
                     <location>
                         <dimension name="weight" xvalue="1000" />
-                        <dimension name="contrast" xvalue="0" />
+                        <dimension name="contrast" xvalue="50" />
                     </location>
                     <masters>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
@@ -309,19 +309,19 @@
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
@@ -329,7 +329,7 @@
                 <glyph name="cent" unicode="0xa2">
                     <location>
                         <dimension name="weight" xvalue="1000" />
-                        <dimension name="contrast" xvalue="0" />
+                        <dimension name="contrast" xvalue="50" />
                     </location>
                     <masters>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
@@ -353,19 +353,19 @@
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
@@ -383,7 +383,7 @@
                 <glyph name="dollar" unicode="0x24">
                     <location>
                         <dimension name="weight" xvalue="1000" />
-                        <dimension name="contrast" xvalue="0" />
+                        <dimension name="contrast" xvalue="100" />
                     </location>
                     <masters>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
@@ -407,19 +407,19 @@
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
@@ -427,7 +427,7 @@
                 <glyph name="cent" unicode="0xa2">
                     <location>
                         <dimension name="weight" xvalue="1000" />
-                        <dimension name="contrast" xvalue="0" />
+                        <dimension name="contrast" xvalue="100" />
                     </location>
                     <masters>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
@@ -451,19 +451,19 @@
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                         <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
-                                <dimension name="contrast" xvalue="0" />
+                                <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
                     </masters>
