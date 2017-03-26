@@ -115,7 +115,7 @@
 			<integer>-239</integer>
 		</array>
 		<key>postscriptFontName</key>
-		<string>AdobeVFPrototype-Master_3</string>
+		<string>AdobeVFPrototype-Master3</string>
 		<key>postscriptForceBold</key>
 		<false/>
 		<key>postscriptOtherBlues</key>
@@ -140,7 +140,7 @@
 		<key>styleMapFamilyName</key>
 		<string>Adobe Variable Font Prototype</string>
 		<key>styleName</key>
-		<string>Regular</string>
+		<string>Master 3</string>
 		<key>trademark</key>
 		<string>Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.</string>
 		<key>unitsPerEm</key>
