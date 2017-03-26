@@ -142,13 +142,13 @@
 		<key>styleName</key>
 		<string>Master 2</string>
 		<key>trademark</key>
-		<string>Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.</string>
+		<string>Adobe is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries.</string>
 		<key>unitsPerEm</key>
 		<integer>1000</integer>
 		<key>versionMajor</key>
 		<integer>1</integer>
 		<key>versionMinor</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>xHeight</key>
 		<integer>487</integer>
 	</dict>
