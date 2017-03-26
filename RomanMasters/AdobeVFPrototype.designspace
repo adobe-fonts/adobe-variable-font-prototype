@@ -7,13 +7,13 @@
         </axis>
     </axes>
     <sources>
-        <source familyname="Adobe VF Prototype" filename="master_0/font.ufo" stylename="Master_0">
+        <source familyname="Adobe VF Prototype" filename="master_0/font.ufo" name="Master_0.0" stylename="Master 0">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="contrast" xvalue="0" />
             </location>
         </source>
-        <source familyname="Adobe VF Prototype" filename="master_1/font.ufo" stylename="Master_1">
+        <source familyname="Adobe VF Prototype" filename="master_1/font.ufo" name="Master_1.1" stylename="Default">
             <lib copy="1" />
             <groups copy="1" />
             <info copy="1" />
@@ -22,25 +22,25 @@
                 <dimension name="contrast" xvalue="0" />
             </location>
         </source>
-        <source familyname="Adobe VF Prototype" filename="master_2/font.ufo" stylename="Master_2">
+        <source familyname="Adobe VF Prototype" filename="master_2/font.ufo" name="Master_2.2" stylename="Master 2">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="0" />
             </location>
         </source>
-        <source familyname="Adobe VF Prototype" filename="master_3/font.ufo" stylename="Master_3">
+        <source familyname="Adobe VF Prototype" filename="master_3/font.ufo" name="Master_3.3" stylename="Master 3">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="100" />
             </location>
         </source>
-        <source familyname="Adobe VF Prototype" filename="master_0/font.ufo" stylename="Master_0">
+        <source familyname="Adobe VF Prototype" filename="master_0/font.ufo" name="Master_0.4" stylename="Master 0">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="contrast" xvalue="100" />
             </location>
         </source>
-        <source familyname="Adobe VF Prototype" filename="master_4/font.ufo" stylename="Master_4">
+        <source familyname="Adobe VF Prototype" filename="master_4/font.ufo" name="Master_4.5" stylename="Master 4">
             <location>
                 <dimension name="weight" xvalue="368" />
                 <dimension name="contrast" xvalue="100" />
@@ -48,7 +48,7 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-ExtraLight.ufo" postscriptfontname="AdobeVFPrototype-ExtraLight" stylename="ExtraLight">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-ExtraLight.ufo" name="ExtraLight" postscriptfontname="AdobeVFPrototype-ExtraLight" stylename="ExtraLight">
             <location>
                 <dimension name="weight" xvalue="0" />
                 <dimension name="contrast" xvalue="0" />
@@ -56,7 +56,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Light.ufo" postscriptfontname="AdobeVFPrototype-Light" stylename="Light">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Light.ufo" name="Light" postscriptfontname="AdobeVFPrototype-Light" stylename="Light">
             <location>
                 <dimension name="weight" xvalue="150" />
                 <dimension name="contrast" xvalue="0" />
@@ -64,7 +64,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Regular.ufo" postscriptfontname="AdobeVFPrototype-Regular" stylename="Regular">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Regular.ufo" name="Regular" postscriptfontname="AdobeVFPrototype-Regular" stylename="Regular">
             <location>
                 <dimension name="weight" xvalue="394" />
                 <dimension name="contrast" xvalue="0" />
@@ -72,7 +72,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Semibold.ufo" postscriptfontname="AdobeVFPrototype-Semibold" stylename="Semibold">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Semibold.ufo" name="Semibold" postscriptfontname="AdobeVFPrototype-Semibold" stylename="Semibold">
             <location>
                 <dimension name="weight" xvalue="600" />
                 <dimension name="contrast" xvalue="0" />
@@ -80,7 +80,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Bold.ufo" postscriptfontname="AdobeVFPrototype-Bold" stylename="Bold">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Bold.ufo" name="Bold" postscriptfontname="AdobeVFPrototype-Bold" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="824" />
                 <dimension name="contrast" xvalue="0" />
@@ -92,37 +92,37 @@
                         <dimension name="contrast" xvalue="0" />
                     </location>
                     <masters>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="dollar.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="dollar.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="dollar.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="dollar.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="dollar.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="dollar.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
@@ -136,37 +136,37 @@
                         <dimension name="contrast" xvalue="0" />
                     </location>
                     <masters>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="cent.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="cent.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="cent.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="cent.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="cent.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="cent.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
@@ -178,7 +178,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black.ufo" postscriptfontname="AdobeVFPrototype-Black" stylename="Black">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-Black.ufo" name="Black" postscriptfontname="AdobeVFPrototype-Black" stylename="Black">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="0" />
@@ -190,37 +190,37 @@
                         <dimension name="contrast" xvalue="0" />
                     </location>
                     <masters>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="dollar.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="dollar.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="dollar.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="dollar.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="dollar.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="dollar.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
@@ -234,37 +234,37 @@
                         <dimension name="contrast" xvalue="0" />
                     </location>
                     <masters>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="cent.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="cent.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="cent.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="cent.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="cent.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="cent.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
@@ -276,7 +276,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-BlackMediumContrast.ufo" postscriptfontname="AdobeVFPrototype-BlackMediumContrast" stylename="Black Medium Contrast">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-BlackMediumContrast.ufo" name="Black Medium Contrast" postscriptfontname="AdobeVFPrototype-BlackMediumContrast" stylename="Black Medium Contrast">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="50" />
@@ -288,37 +288,37 @@
                         <dimension name="contrast" xvalue="50" />
                     </location>
                     <masters>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="dollar.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="dollar.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="dollar.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="dollar.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="dollar.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="dollar.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
@@ -332,37 +332,37 @@
                         <dimension name="contrast" xvalue="50" />
                     </location>
                     <masters>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="cent.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="cent.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="cent.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="cent.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="cent.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="cent.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
@@ -374,7 +374,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-BlackHighContrast.ufo" postscriptfontname="AdobeVFPrototype-BlackHighContrast" stylename="Black High Contrast">
+        <instance familyname="Adobe VF Prototype" filename="instances/AdobeVFPrototype-BlackHighContrast.ufo" name="Black High Contrast" postscriptfontname="AdobeVFPrototype-BlackHighContrast" stylename="Black High Contrast">
             <location>
                 <dimension name="weight" xvalue="1000" />
                 <dimension name="contrast" xvalue="100" />
@@ -386,37 +386,37 @@
                         <dimension name="contrast" xvalue="100" />
                     </location>
                     <masters>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="dollar.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="dollar.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="dollar.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="dollar.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="dollar.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="dollar.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="dollar.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
@@ -430,37 +430,37 @@
                         <dimension name="contrast" xvalue="100" />
                     </location>
                     <masters>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.0">
+                        <master glyphname="cent.nostroke" source="Master_0.0">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_1.1">
+                        <master glyphname="cent.nostroke" source="Master_1.1">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_2.2">
+                        <master glyphname="cent.nostroke" source="Master_2.2">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="0" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_3.3">
+                        <master glyphname="cent.nostroke" source="Master_3.3">
                             <location>
                                 <dimension name="weight" xvalue="1000" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_0.4">
+                        <master glyphname="cent.nostroke" source="Master_0.4">
                             <location>
                                 <dimension name="weight" xvalue="0" />
                                 <dimension name="contrast" xvalue="100" />
                             </location>
                         </master>
-                        <master glyphname="cent.nostroke" source="master.Adobe VF Prototype.Master_4.5">
+                        <master glyphname="cent.nostroke" source="Master_4.5">
                             <location>
                                 <dimension name="weight" xvalue="368" />
                                 <dimension name="contrast" xvalue="100" />
