@@ -6,6 +6,14 @@
             <labelname xml:lang="en">Contrast</labelname>
         </axis>
     </axes>
+    <rules>
+        <rule name="No Stroke">
+            <condition maximum="1000" minimum="800" name="weight" />
+            <condition maximum="100" minimum="0" name="contrast" />
+            <sub name="dollar" with="dollar.nostroke" />
+            <sub name="cent" with="dollar.nostroke" />
+        </rule>
+    </rules>
     <sources>
         <source familyname="Adobe VF Prototype" filename="master_0/font.ufo" name="Master_0.0" stylename="Master 0">
             <location>
