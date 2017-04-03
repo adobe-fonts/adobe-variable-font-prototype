@@ -19,6 +19,8 @@ table name {
 	nameid 9 "Frank Grie\00dfhammer";
 	nameid 9 1 "Frank Grie\a7hammer";
 	nameid 19 "$\00A2AaBbCcDdEeFfGg";
+	nameid 25 "AdobeVFPrototype";
+	nameid 25 1 "AdobeVFPrototype";
 } name;
 
 
