@@ -1,13 +1,13 @@
 # Adobe Variable Font Prototype
 
-OpenType-CFF2 variable font made from [UFO] sources derived from [Source Serif Pro],
-designed by [Frank Grießhammer].
+Variable font in OpenType-CFF2 and TrueType formats, made from [UFO] sources derived from
+[Source Serif Pro], designed by [Frank Grießhammer].
 
-This font is intended to serve as a test and demonstration for environments and workflows
-that support the Compact Font Format flavor of the [OpenType variable fonts].
+The font files are intended to serve as test cases for environments and workflows that aim
+to support [OpenType variable fonts].
 
-The font is functional but it's not considered *shippable* — see [Current limitations].
-We plan to update it as the tools improve.
+The fonts are functional but are not considered *shippable* — see [Current limitations].
+We plan to update them as the tools improve.
 
 [UFO]: http://unifiedfontobject.org/
 [Source Serif Pro]: https://github.com/adobe-fonts/source-serif-pro
@@ -47,60 +47,66 @@ listed below.
 [Adobe Latin 2]: https://github.com/adobe-type-tools/adobe-latin-charsets#adobe-latin-2-adobe-western-2
 
 
-## Downloading the font
+## Downloading the font files
 
 * [Latest release](../../releases/latest)
 * [All releases](../../releases)
 
 
-## Building the font from source
+## Building the fonts from source
 
 ### Requirements
 
-To build **AdobeVFPrototype.otf** from source, you need to have installed a custom build
-(2.5.65463 or later) of the [Adobe Font Development Kit for OpenType] which can be
-downloaded from <http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html>
+To build the **OpenType-CFF2 version** (AdobeVFPrototype.otf), you need to have installed a
+custom build (2.5.65463 or later) of the [Adobe Font Development Kit for OpenType] which can
+be downloaded from <http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html>
+
+To build the **TrueType version** (AdobeVFPrototype.ttf), you need to have installed a
+customized fork of [fontmake] which is available at <https://github.com/adobe-type-tools/fontmake>
 
 [Adobe Font Development Kit for OpenType]: http://www.adobe.com/devnet/opentype/afdko.html
-
+[fontmake]: https://github.com/googlei18n/fontmake
 
 ### Build command
 
 macOS and Linux:
 
 ```sh
-$ sh buildFont.sh
+sh buildFont.sh
 ```
 
 Windows:
 
 ```sh
-> cmd buildFont.sh
+cmd buildFont.sh
 ```
 
 ### Build process
 
-The **buildFont.sh** file calls two scripts, `buildMasterOTFs` and `buildCFF2VF`.
+The **buildFont.sh** file first runs `fontmake` to build the variable TrueType font. The
+`GSUB` table of this font is then patched with `ttx` to add a *[feature variations table]*
+— this patching is what enables the transitional glyphs to work.
+
+Next, the OpenType-CFF2 font is built with the scripts `buildMasterOTFs` and `buildCFF2VF`.
 The first script generates OpenType-CFF fonts from each of the UFO masters. And the
-second takes the set of OTF fonts built in the previous step, and combines them to produce
-an OpenType-CFF2 variable font. More details about the process are provided at
+second takes the set of OTFs built in the previous step, and combines them to produce
+the CFF2 variable font. More details about the process are provided at
 <http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html>
 
-The build script finally runs TTX to make some changes to the `name` and `GSUB` tables.
-In the `name` table, the placeholder word *Custom* is changed to *Contrast*.
-And in the `GSUB` table, a *[feature variations table]* is added.
+Finally, `sfntedit` is used for replacing the `name`, `GPOS` and `GSUB` tables in the
+OT-CFF2 font by the ones from the TT font. And the tool is also use for copying the
+OTF's `DSIG` table into the TTF.
 
 [feature variations table]: https://www.microsoft.com/typography/otspec/chapter2.htm#featvartable
 
 
 ## Current limitations
 
-* Adobe Variable Font Prototype cannot be displayed by macOS or Windows because their font
+* The OpenType-CFF2 font cannot be displayed by macOS or Windows because their font
 rasterizers do not yet support the newer `CFF2` table. (As of this moment, the only tool
 that can render OT-CFF2 fonts is [FontView]).
-* The font's glyphs will not be hinted because the AFDKO's `autohint` tool cannot yet
-produce hinting data that is compatible across a set of master fonts.
-* The font does not contain the required `MVAR` and `STAT` tables.
-* The font's `CFF2` table lacks subroutinization.
+* The font's `CFF2` table is not subroutinized.
+* Neither of the fonts is hinted.
+* Neither of the fonts contains the required `MVAR` and `STAT` tables.
 
 [FontView]: https://github.com/googlei18n/fontview
