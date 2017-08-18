@@ -2,7 +2,7 @@
 <designspace format="3">
     <axes>
         <axis default="368.0" maximum="1000.0" minimum="0.0" name="weight" tag="wght" />
-        <axis default="0.0" maximum="100.0" minimum="0.0" name="contrast" tag="cntr">
+        <axis default="0.0" maximum="100.0" minimum="0.0" name="contrast" tag="CNTR">
             <labelname xml:lang="en">Contrast</labelname>
         </axis>
     </axes>
