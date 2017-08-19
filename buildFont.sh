@@ -1,27 +1,37 @@
-#!/bin/env sh
+#!/usr/bin/env sh
 
-# build the TTF version -- this requires a customized version of fontmake which
-# is available at https://github.com/adobe-type-tools/fontmake
-fontmake -m RomanMasters/AdobeVFPrototype.designspace -o variable --production-names
-mv RomanMasters/AdobeVFPrototype-Variable.ttf AdobeVFPrototype.ttf
-
-# patch GSUB table, to add <FeatureVariations>
-# this enables the transitional glyphs dollar and cent
-ttx -o AdobeVFPrototype.ttf -m AdobeVFPrototype.ttf GSUB_patch.ttx
+folder=RomanMasters
+font=AdobeVFPrototype
 
 # build the OTF version -- this requires an experimental build of the AFDKO which
 # is available at http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html
-buildMasterOTFs RomanMasters/AdobeVFPrototype.designspace
-buildCFF2VF RomanMasters/AdobeVFPrototype.designspace  AdobeVFPrototype.otf
-rm RomanMasters/master_*/current.fpr
+buildMasterOTFs $folder/$font.designspace
+buildCFF2VF $folder/$font.designspace
 
-# replace the name, GPOS and GSUB tables in the OTF font by the ones from the TTF
-sfntedit -x name=.tb_name,GPOS=.tb_GPOS,GSUB=.tb_GSUB AdobeVFPrototype.ttf
-sfntedit -a name=.tb_name,GPOS=.tb_GPOS,GSUB=.tb_GSUB AdobeVFPrototype.otf
+# extract and subroutinize the CFF2 table
+echo 'Subroutinizing' $folder/$font.otf
+tx -cff2 +S +b -std $folder/$font.otf $folder/.tb_cff2 2> /dev/null
 
-# copy the DSIG table in the OTF font into the TTF
-sfntedit -x DSIG=.tb_DSIG AdobeVFPrototype.otf
-sfntedit -a DSIG=.tb_DSIG AdobeVFPrototype.ttf
+# replace CFF2 table with subroutinized version
+sfntedit -a CFF2=$folder/.tb_cff2 $folder/$font.otf 1> /dev/null
+
+# build the TTF version -- this requires a customized version of fontmake which
+# is available at https://github.com/adobe-type-tools/fontmake
+fontmake -m $folder/$font.designspace -o variable --production-names
+
+# patch GSUB table, to add <FeatureVariations>
+# this enables the transitional glyphs dollar and cent
+ttx -o $folder/$font.ttf -m $folder/$font.ttf GSUB_patch.ttx
+
+# use DSIG, name, OS/2, hhea, post, and STAT tables from OTF
+sfntedit -x DSIG=$folder/.tb_DSIG,name=$folder/.tb_name,OS/2=$folder/.tb_os2,hhea=$folder/.tb_hhea,post=$folder/.tb_post,STAT=$folder/.tb_STAT $folder/$font.otf 1> /dev/null
+sfntedit -a DSIG=$folder/.tb_DSIG,name=$folder/.tb_name,OS/2=$folder/.tb_os2,hhea=$folder/.tb_hhea,post=$folder/.tb_post,STAT=$folder/.tb_STAT $folder/$font.ttf 1> /dev/null
+
+# use cmap, GDEF, GPOS, and GSUB tables from TTF
+sfntedit -x cmap=$folder/.tb_cmap,GDEF=$folder/.tb_GDEF,GPOS=$folder/.tb_GPOS,GSUB=$folder/.tb_GSUB $folder/$font.ttf 1> /dev/null
+sfntedit -a cmap=$folder/.tb_cmap,GDEF=$folder/.tb_GDEF,GPOS=$folder/.tb_GPOS,GSUB=$folder/.tb_GSUB $folder/$font.otf 1> /dev/null
 
 # delete temporary files
-rm .tb_*
+rm */.tb_*
+
+echo "Done"
