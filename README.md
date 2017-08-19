@@ -83,19 +83,22 @@ cmd buildFont.sh
 
 ### Build process
 
-The **buildFont.sh** file first runs `fontmake` to build the variable TrueType font. The
-`GSUB` table of this font is then patched with `ttx` to add a *[feature variations table]*
-— this patching is what enables the transitional glyphs to work.
-
-Next, the OpenType-CFF2 font is built with the scripts `buildMasterOTFs` and `buildCFF2VF`.
-The first script generates OpenType-CFF fonts from each of the UFO masters. And the
+The **buildFont.sh** script first builds the OpenType-CFF2 font with the FDK tools
+`buildMasterOTFs` and `buildCFF2VF`.
+The first tool generates OpenType-CFF fonts from each of the UFO masters. And the
 second takes the set of OTFs built in the previous step, and combines them to produce
 the CFF2 variable font. More details about the process are provided at
 <http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html>
 
-Finally, `sfntedit` is used for replacing the `name`, `GPOS` and `GSUB` tables in the
-OT-CFF2 font by the ones from the TT font. And the tool is also use for copying the
-OTF's `DSIG` table into the TTF.
+The CFF2 table is then subroutinized with FDK's `tx` tool, and the modified table
+is replaced in place using FDK's `sfntedit` tool.
+
+Next, `fontmake` is used for building the variable TrueType font. The `GSUB`
+table of this font is then patched with `ttx` to add a *[feature variations table]*
+— this patching is what enables the transitional glyphs to work.
+
+Finally, `sfntedit` is used for copying/replacing several tables between the
+OTF and TTF fonts.
 
 [feature variations table]: https://www.microsoft.com/typography/otspec/chapter2.htm#featvartable
 
@@ -105,8 +108,6 @@ OTF's `DSIG` table into the TTF.
 * The OpenType-CFF2 font cannot be displayed by macOS or Windows because their font
 rasterizers do not yet support the newer `CFF2` table. (As of this moment, the only tool
 that can render OT-CFF2 fonts is [FontView]).
-* The font's `CFF2` table is not subroutinized.
 * Neither of the fonts is hinted.
-* Neither of the fonts contains the required `MVAR` and `STAT` tables.
 
 [FontView]: https://github.com/googlei18n/fontview
