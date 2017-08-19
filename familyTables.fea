@@ -13,6 +13,9 @@ table name {
 	nameid 14 "http://scripts.sil.org/OFL";
 #	nameid 19 "$\00A2AaBbCcDdEeFfGg";
 	nameid 25 "AdobeVFPrototype";
+	nameid 256 "Low";
+	nameid 257 "Medium";
+	nameid 258 "High";
 } name;
 
 
