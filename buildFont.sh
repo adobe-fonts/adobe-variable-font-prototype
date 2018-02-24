@@ -5,8 +5,8 @@ font=AdobeVFPrototype
 
 # build the OTF version -- this requires an experimental build of the AFDKO which
 # is available at http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html
-buildMasterOTFs $folder/$font.designspace
-buildCFF2VF $folder/$font.designspace
+buildmasterotfs $folder/$font.designspace
+buildcff2vf $folder/$font.designspace
 
 # extract and subroutinize the CFF2 table
 echo 'Subroutinizing' $folder/$font.otf
