@@ -57,9 +57,8 @@ listed below.
 
 ### Requirements
 
-To build the **OpenType-CFF2 version** (AdobeVFPrototype.otf), you need to have installed a
-custom build (2.5.65463 or later) of the [Adobe Font Development Kit for OpenType] which can
-be downloaded from <http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html>
+To build the **OpenType-CFF2 version** (AdobeVFPrototype.otf), you need to have installed the
+[Adobe Font Development Kit for OpenType] which is available at <https://github.com/adobe-type-tools/afdko>
 
 To build the **TrueType version** (AdobeVFPrototype.ttf), you need to have installed a
 customized fork of [fontmake] which is available at <https://github.com/adobe-type-tools/fontmake>
