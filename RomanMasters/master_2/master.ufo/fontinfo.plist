@@ -7,7 +7,7 @@
 		<key>capHeight</key>
 		<integer>677</integer>
 		<key>copyright</key>
-		<string>Copyright 2016 Adobe Systems Incorporated (http://www.adobe.com/).</string>
+		<string>Copyright 2016 Adobe (http://www.adobe.com/).</string>
 		<key>descender</key>
 		<integer>-245</integer>
 		<key>familyName</key>
@@ -25,7 +25,7 @@
 		<key>openTypeNameLicenseURL</key>
 		<string>http://scripts.sil.org/OFL</string>
 		<key>openTypeNameManufacturer</key>
-		<string>Adobe Systems Incorporated</string>
+		<string>Adobe</string>
 		<key>openTypeNameManufacturerURL</key>
 		<string>http://www.adobe.com/type</string>
 		<key>openTypeOS2CodePageRanges</key>
@@ -142,7 +142,7 @@
 		<key>styleName</key>
 		<string>Master 2</string>
 		<key>trademark</key>
-		<string>Adobe is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries.</string>
+		<string>Adobe is either a registered trademark or a trademark of Adobe in the United States and/or other countries.</string>
 		<key>unitsPerEm</key>
 		<integer>1000</integer>
 		<key>versionMajor</key>

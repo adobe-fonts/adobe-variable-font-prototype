@@ -1,12 +1,12 @@
 table head {
-	FontRevision 1.003;
+	FontRevision 1.004;
 } head;
 
 
 table name {
-	nameid 0 "Copyright 2016 Adobe Systems Incorporated (http://www.adobe.com/).";
-	nameid 7 "Adobe is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries.";
-	nameid 8 "Adobe Systems Incorporated";
+	nameid 0 "Copyright 2016 Adobe (http://www.adobe.com/).";
+	nameid 7 "Adobe is either a registered trademark or a trademark of Adobe in the United States and/or other countries.";
+	nameid 8 "Adobe";
 	nameid 9 "Frank Grie\00dfhammer";
 	nameid 11 "http://www.adobe.com/type";
 	nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
