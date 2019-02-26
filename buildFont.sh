@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 
-folder=RomanMasters
+# get absolute path to bash script; this allows to call it from any directory
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+folder=$DIR/RomanMasters
 font=AdobeVFPrototype
 
 # build the OTF version -- this requires the AFDKO toolkit
@@ -17,11 +20,7 @@ sfntedit -a CFF2=$folder/.tb_cff2 $folder/$font.otf 1> /dev/null
 
 # build the TTF version -- this requires a customized version of fontmake
 # which is available at https://github.com/adobe-type-tools/fontmake
-fontmake -m $folder/$font.designspace -o variable --production-names
-
-# patch GSUB table, to add <FeatureVariations>
-# this enables the transitional glyphs dollar and cent
-ttx -o $folder/$font.ttf -m $folder/$font.ttf GSUB_patch.ttx
+fontmake -m $folder/$font.designspace -o variable --production-names --output-path $folder/$font.ttf
 
 # use DSIG, name, OS/2, hhea, post, and STAT tables from OTF
 sfntedit -x DSIG=$folder/.tb_DSIG,name=$folder/.tb_name,OS/2=$folder/.tb_os2,hhea=$folder/.tb_hhea,post=$folder/.tb_post,STAT=$folder/.tb_STAT $folder/$font.otf 1> /dev/null
@@ -32,6 +31,7 @@ sfntedit -x cmap=$folder/.tb_cmap,GDEF=$folder/.tb_GDEF,GPOS=$folder/.tb_GPOS,GS
 sfntedit -a cmap=$folder/.tb_cmap,GDEF=$folder/.tb_GDEF,GPOS=$folder/.tb_GPOS,GSUB=$folder/.tb_GSUB $folder/$font.otf 1> /dev/null
 
 # delete temporary files
-rm */.tb_*
+rm $folder/.tb_*
+rm $folder/master_*/*.otf
 
 echo "Done"

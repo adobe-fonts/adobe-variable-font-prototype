@@ -6,7 +6,7 @@ Variable font in OpenType-CFF2 and TrueType formats, made from [UFO] sources der
 The font files are intended to serve as test cases for environments and workflows that aim
 to support [OpenType variable fonts].
 
-The fonts are functional but are not considered *shippable* — see [Current limitations].
+The fonts are functional but have some limitations — see [Current limitations].
 We plan to update them as the tools improve.
 
 [UFO]: http://unifiedfontobject.org/
@@ -57,13 +57,13 @@ listed below.
 
 ### Requirements
 
-To build the **OpenType-CFF2 version** (AdobeVFPrototype.otf), you need to have installed the
-[Adobe Font Development Kit for OpenType] which is available at <https://github.com/adobe-type-tools/afdko>
+To build the **OpenType-CFF2 version** (`AdobeVFPrototype.otf`), you need to have installed the
+[afdko] version 2.8.6 or later.
 
-To build the **TrueType version** (AdobeVFPrototype.ttf), you need to have installed a
-customized fork of [fontmake] which is available at <https://github.com/adobe-type-tools/fontmake>
+To build the **TrueType version** (`AdobeVFPrototype.ttf`), you need to have installed [fontmake]
+version 1.9.1 or later.
 
-[Adobe Font Development Kit for OpenType]: http://www.adobe.com/devnet/opentype/afdko.html
+[afdko]: https://github.com/adobe-type-tools/afdko
 [fontmake]: https://github.com/googlei18n/fontmake
 
 ### Build command
@@ -86,27 +86,18 @@ The **buildFont.sh** script first builds the OpenType-CFF2 font with the FDK too
 `buildMasterOTFs` and `buildCFF2VF`.
 The first tool generates OpenType-CFF fonts from each of the UFO masters. And the
 second takes the set of OTFs built in the previous step, and combines them to produce
-the CFF2 variable font. More details about the process are provided at
-<http://www.adobe.com/devnet/opentype/afdko/AFDKO-Variable-Font-Support.html>
+the CFF2 variable font.
 
 The CFF2 table is then subroutinized with FDK's `tx` tool, and the modified table
 is replaced in place using FDK's `sfntedit` tool.
 
-Next, `fontmake` is used for building the variable TrueType font. The `GSUB`
-table of this font is then patched with `ttx` to add a *[feature variations table]*
-— this patching is what enables the transitional glyphs to work.
+Next, `fontmake` is used for building the variable TrueType font.
 
 Finally, `sfntedit` is used for copying/replacing several tables between the
 OTF and TTF fonts.
 
-[feature variations table]: https://www.microsoft.com/typography/otspec/chapter2.htm#featvartable
-
 
 ## Current limitations
 
-* The OpenType-CFF2 font cannot be displayed by macOS or Windows because their font
-rasterizers do not yet support the newer `CFF2` table. (As of this moment, the only tool
-that can render OT-CFF2 fonts is [FontView]).
+* Support for the variable OTF-CFF2 flavor is not as broad as for the variable TTF flavor.
 * Neither of the fonts is hinted.
-
-[FontView]: https://github.com/googlei18n/fontview

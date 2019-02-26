@@ -72,20 +72,6 @@ feature liga {
 } liga;
 
 
-#--------------------------------------
-# rvrn is in effect when the GSUB FeatureVariations conditions are NOT met.
-feature rvrn {
-	sub dollar.nostroke by dollar;
-	sub cent.nostroke by cent;
-} rvrn;
-
-# lookup RVRN is in effect when the GSUB FeatureVariations conditions ARE met.
-lookup RVRN {
-	sub dollar by dollar.nostroke;
-	sub cent by cent.nostroke;
-} RVRN;
-
-
 #-------------------------------------------
 feature size {
 	parameters 10.0 0; # design size, subfamily

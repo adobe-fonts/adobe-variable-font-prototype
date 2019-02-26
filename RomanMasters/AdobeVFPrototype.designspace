@@ -16,10 +16,12 @@
     </axes>
     <rules>
         <rule name="No Stroke">
-            <condition maximum="1000" minimum="800" name="weight" />
-            <condition maximum="100" minimum="0" name="contrast" />
+            <conditionset>
+                <condition maximum="1000" minimum="800" name="weight" />
+                <condition maximum="100" minimum="0" name="contrast" />
+            </conditionset>
             <sub name="dollar" with="dollar.nostroke" />
-            <sub name="cent" with="dollar.nostroke" />
+            <sub name="cent" with="cent.nostroke" />
         </rule>
     </rules>
     <sources>
