@@ -22,8 +22,7 @@ tx -cff2 +S +b -std "$otf_file" "$folder/.tb_cff2" 2> /dev/null
 # replace CFF2 table with subroutinized version
 sfntedit -a CFF2="$folder/.tb_cff2" "$otf_file" 1> /dev/null
 
-# build the TTF version -- this requires a customized version of fontmake
-# which is available at https://github.com/adobe-type-tools/fontmake
+# build the TTF version
 fontmake -m "$dsp_file" -o variable --production-names --output-path "$ttf_file"
 
 # use DSIG, name, OS/2, hhea, post, and STAT tables from OTF
