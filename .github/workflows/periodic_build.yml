@@ -31,4 +31,4 @@ jobs:
 
     - name: Run buildFont.sh
       run: |
-        sh ./buildFont.sh
+        bash ./buildFont.sh
