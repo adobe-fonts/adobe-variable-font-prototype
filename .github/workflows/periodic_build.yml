@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    name: build using ubuntu-latest
+    name: Build Adobe VF Prototype
     runs-on: ubuntu-latest
 
     steps:
@@ -24,11 +24,16 @@ jobs:
       with:
         python-version: 3.7
       
-    - name: Install AFDKO (latest)
+    - name: Install AFDKO, fontmake (latest)
       run: |
         python -m pip install --upgrade pip
-        pip install afdko
+        pip install afdko fontmake
 
     - name: Run buildFont.sh
       run: |
         bash ./buildFont.sh
+
+# TODO:
+#  - fail step when buildFont.sh has failures
+#  - compare final output to current build
+#  - log tool/package/pip freeze info
