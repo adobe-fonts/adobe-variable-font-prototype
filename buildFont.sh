@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# exit script if any command results in an error
+set -e
+
 # get absolute path to bash script; this allows to call it from any directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
