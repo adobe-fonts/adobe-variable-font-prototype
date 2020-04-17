@@ -31,8 +31,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.get_version.outputs.VERSION }}
-        release_name: Version ${{ steps.get_version.outputs.VERSION }}
+        tag_name: ${{ steps.get_tag.outputs.VERSION }}
+        release_name: Version ${{ steps.get_tag.outputs.VERSION }}
         draft: false
         prerelease: true  # default to pre-release; manually set to release if OK after inspection
 
@@ -52,7 +52,7 @@ jobs:
     - name: Check font version string ~= tag
       run: |
         echo '(placeholder for future check)'
-        echo 'Tag: ${{ steps.get_version.outputs.VERSION }}'
+        echo 'Tag: ${{ steps.get_tag.outputs.VERSION }}'
 
     - name: Upload OTF Asset
       id: upload-otf-asset 
