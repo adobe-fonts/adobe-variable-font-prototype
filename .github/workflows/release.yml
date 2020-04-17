@@ -1,0 +1,71 @@
+# Workflow to create a release and add associated assets
+
+name: Release
+
+# Triggers the workflow on push of a tag matching the specified pattern
+on:
+  push:
+    # the following effectively disables the workflow; this is temporary while it's being developed
+    branches-ignore:
+      - '**'
+#    remove the 'branches-ignore' section above and uncomment the lines below to enable the workflow on tag push
+#    tags:
+#      - '[0-9].*'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "do_release"
+  do_release:
+    name: Create Adobe VF Prototype Release
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out project
+      uses: actions/checkout@v1
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: true  # default to pre-release; manually set to release if OK after inspection
+
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install afdko fontmake
+    
+    - name: Run build script
+      run: |
+        bash ./buildFont.sh
+
+    - name: Upload OTF Asset
+      id: upload-otf-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: ./RomanMasters/AdobeVFPrototype.otf
+        asset_name: AdobeVFPrototype.otf
+        asset_content_type: font/otf
+
+    - name: Upload TTF Asset
+      id: upload-ttf-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+        asset_path: ./RomanMasters/AdobeVFPrototype.ttf
+        asset_name: AdobeVFPrototype.ttf
+        asset_content_type: font/ttf
