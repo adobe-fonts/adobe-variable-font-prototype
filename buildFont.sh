@@ -16,7 +16,7 @@ dsp_file=$folder/$font.designspace
 # build the OTF version -- this requires the AFDKO toolkit
 # which is available at https://github.com/adobe-type-tools/afdko
 buildmasterotfs -d "$dsp_file"
-buildcff2vf -d "$dsp_file"
+buildcff2vf -k -d "$dsp_file"
 
 # extract and subroutinize the CFF2 table
 echo 'Subroutinizing' "$otf_file"
