@@ -5,12 +5,8 @@ name: Release
 # Triggers the workflow on push of a tag matching the specified pattern
 on:
   push:
-    # the following effectively disables the workflow; this is temporary while it's being developed
-    branches-ignore:
-      - '**'
-#    remove the 'branches-ignore' section above and uncomment the lines below to enable the workflow on tag push
-#    tags:
-#      - '[0-9].*'
+   tags:
+     - '[0-9].*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -23,14 +19,20 @@ jobs:
     - name: Check out project
       uses: actions/checkout@v1
 
+    - name: Get the tag
+      id: get_tag
+      # strip '/refs/tags/' from ref and store in VERSION
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}.
+
     - name: Create Release
+      # N.B. this will fail if the release already exists
       id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        tag_name: ${{ steps.get_version.outputs.VERSION }}
+        release_name: Version ${{ steps.get_version.outputs.VERSION }}
         draft: false
         prerelease: true  # default to pre-release; manually set to release if OK after inspection
 
@@ -45,8 +47,12 @@ jobs:
         pip install afdko fontmake
     
     - name: Run build script
+      run: bash ./buildFont.sh
+
+    - name: Check font version string ~= tag
       run: |
-        bash ./buildFont.sh
+        echo '(placeholder for future check)'
+        echo 'Tag: ${{ steps.get_version.outputs.VERSION }}'
 
     - name: Upload OTF Asset
       id: upload-otf-asset 
