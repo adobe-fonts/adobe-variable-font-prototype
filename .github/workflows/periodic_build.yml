@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: '0 4 * * 6'
   repository_dispatch:
-    types: test-build
+    types: manual-trigger
 
 jobs:
   build:
@@ -16,24 +16,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Check-out repository under $GITHUB_WORKSPACE
-    - uses: actions/checkout@v1
+      - name: Get latest release with tag
+        id: latestrelease
+        run: |
+          echo "::set-output name=releasetag::$(curl -s --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' https://api.github.com/repos/adobe-fonts/adobe-variable-font-prototype/releases/latest | jq '.tag_name' | sed 's/\"//g')"
 
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
-      
-    - name: Install AFDKO, fontmake (latest)
-      run: |
-        python -m pip install --upgrade pip
-        pip install afdko fontmake
+      - name: Log tag
+        run: |
+          echo 'Latest: ${{ steps.latestrelease.outputs.releasetag }}'
 
-    - name: Run buildFont.sh
-      run: |
-        bash ./buildFont.sh
+      - name: Check out the release
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.latestrelease.outputs.releasetag }}
+
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+
+      - name: Install AFDKO, fontmake (latest)
+        run: |
+          python -m pip install --upgrade pip
+          pip install afdko fontmake
+
+      - name: Run buildFont.sh
+        run: |
+          bash ./buildFont.sh
 
 # TODO:
-#  - fail step when buildFont.sh has failures
-#  - compare final output to current build
-#  - log tool/package/pip freeze info
+#  - compare periodic-build binaries to latest release assets
