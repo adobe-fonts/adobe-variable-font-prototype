@@ -22,7 +22,7 @@ jobs:
     - name: Get the tag
       id: get_tag
       # strip '/refs/tags/' from ref and store in VERSION
-      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}.
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
 
     - name: Create Release
       # N.B. this will fail if the release already exists
