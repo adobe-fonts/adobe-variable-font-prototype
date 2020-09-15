@@ -7,3 +7,4 @@ table OS/2 {
 
 include (../../familyGSUB.fea);
 include (../../familyGPOS.fea);
+include (../STAT.fea);

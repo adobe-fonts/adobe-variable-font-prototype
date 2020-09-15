@@ -25,6 +25,9 @@ tx -cff2 +S +b -std "$otf_file" "$folder/.tb_cff2" 2> /dev/null
 # replace CFF2 table with subroutinized version
 sfntedit -a CFF2="$folder/.tb_cff2" "$otf_file" 1> /dev/null
 
+# comment out STAT feature file which cannot be digested by fontmake
+sed -i '' 's/^/#/' $folder/STAT.fea
+
 # build the TTF version
 fontmake -m "$dsp_file" -o variable --production-names --output-path "$ttf_file"
 
@@ -39,5 +42,8 @@ sfntedit -a cmap="$folder/.tb_cmap",GDEF="$folder/.tb_GDEF",GPOS="$folder/.tb_GP
 # delete temporary files
 rm "$folder"/.tb_*
 rm "$folder"/master_*/*.otf
+
+# undo changes to STAT feature file
+sed -i '' 's/#//' $folder/STAT.fea
 
 echo "Done"
