@@ -1,57 +1,96 @@
 import pytest
-
 import uharfbuzz as hb
 
 
-@pytest.mark.parametrize('axis_dict,expected', [
-                         ({}, [653, 618, 632, 234, 524, 511, 455, 234, 497, 497, 497]),  # noqa: E501
-                         ({"wght": 200, "CNTR": 0}, [643, 594, 644, 248, 510, 482, 457, 248, 490, 490, 490]),  # noqa: E501
-                         ({"wght": 200, "CNTR": 100}, [643, 594, 644, 248, 510, 482, 457, 248, 490, 490, 490]),  # noqa: E501
-                         ({"wght": 900, "CNTR": 0}, [680, 660, 618, 206, 563, 543, 468, 206, 560, 560, 560]),  # noqa: E501
-                         ({"wght": 900, "CNTR": 100}, [680, 660, 618, 206, 563, 543, 468, 206, 560, 560, 560]),  # noqa: E501
+@pytest.mark.parametrize('axis_dict', [
+                         {},
+                         {"wght": 200, "CNTR": 0},
+                         {"wght": 200, "CNTR": 25},
+                         {"wght": 200, "CNTR": 75},
+                         {"wght": 200, "CNTR": 100},
+                         {"wght": 400, "CNTR": 0},
+                         {"wght": 400, "CNTR": 25},
+                         {"wght": 400, "CNTR": 75},
+                         {"wght": 400, "CNTR": 100},
+                         {"wght": 900, "CNTR": 0},
+                         {"wght": 900, "CNTR": 25},
+                         {"wght": 900, "CNTR": 75},
+                         {"wght": 900, "CNTR": 100},
                          ])
-def test_basic_var(otf_font, ttf_font, axis_dict, expected):
+def test_basic_var(latest_otf, otf_font,
+                   latest_ttf, ttf_font,
+                   axis_dict):
     """
     Check x_advances of each character in string at several variations.
     """
-    for font in (otf_font, ttf_font):
-        font.set_variations(axis_dict)
-        buf = hb.Buffer()
-        buf.add_str("ABC xyz 123")
-        buf.guess_segment_properties()
+    var_str = "Hello, World! 12345 ÀÉÏøÑ [({})]"
 
-        hb.shape(font, buf, None)
-        positions = buf.glyph_positions
+    for expected, actual in ((latest_otf, otf_font), (latest_ttf, ttf_font)):
+        buf_expected = hb.Buffer()
+        buf_expected.add_str(var_str)
+        buf_expected.guess_segment_properties()
 
-        actual = [pos.x_advance for pos in positions]
+        buf_actual = hb.Buffer()
+        buf_actual.add_str(var_str)
+        buf_actual.guess_segment_properties()
 
-        assert actual == expected
+        expected.set_variations(axis_dict)
+        hb.shape(expected, buf_expected, None)
+        infos_expected = buf_expected.glyph_infos
+        positions_expected = buf_expected.glyph_positions
+
+        actual.set_variations(axis_dict)
+        hb.shape(actual, buf_actual, None)
+        infos_actual = buf_actual.glyph_infos
+        positions_actual = buf_actual.glyph_positions
+
+        assert len(infos_expected) == len(infos_actual)
+
+        for i in range(len(infos_expected)):
+            gn_expected = expected.get_glyph_name(infos_expected[i].codepoint)
+            gn_actual = actual.get_glyph_name(infos_actual[i].codepoint)
+
+            assert gn_actual == gn_expected
+
+            pos_expected = positions_expected[i].x_advance
+            pos_actual = positions_actual[i].x_advance
+
+            assert pos_actual == pos_expected
 
 
-@pytest.mark.parametrize('wght_val,expected', [
-                         (200, ['dollar', 'space', 'cent']),
-                         (689, ['dollar', 'space', 'cent']),
-                         (690, ['dollar.nostroke', 'space', 'cent.nostroke']),
-                         (900, ['dollar.nostroke', 'space', 'cent.nostroke']),
-                         ])
-def test_rvrn(otf_font, ttf_font, wght_val, expected):
+@pytest.mark.parametrize('wght_val',
+                         [200, 300, 400, 500, 600, 689, 690, 700, 800, 900])
+def test_rvrn(latest_otf, otf_font,
+              latest_ttf, ttf_font,
+              wght_val):
     """
     Ensure that the 'rvrn' feature is activated/not activated at expected
     variations. The 'rvrn' feature of this font substitutes a design variation
     of '$' and '¢' at heavier weights.
     """
-    for font in (otf_font, ttf_font):
-        font.set_variations({"wght": wght_val})
-        buf = hb.Buffer()
-        buf.add_str("$ ¢")
-        buf.guess_segment_properties()
+    test_str = "$2.00 5¢"
 
-        hb.shape(font, buf, None)
-        infos = buf.glyph_infos
+    for expected, actual in ((latest_otf, otf_font), (latest_ttf, ttf_font)):
+        buf_expected = hb.Buffer()
+        buf_expected.add_str(test_str)
+        buf_expected.guess_segment_properties()
 
-        actual = []
-        for info in infos:
-            gn = font.get_glyph_name(info.codepoint)
-            actual.append(gn)
+        buf_actual = hb.Buffer()
+        buf_actual.add_str(test_str)
+        buf_actual.guess_segment_properties()
 
-        assert actual == expected
+        expected.set_variations({"wght": wght_val})
+        hb.shape(expected, buf_expected, None)
+        infos_expected = buf_expected.glyph_infos
+
+        actual.set_variations({"wght": wght_val})
+        hb.shape(actual, buf_actual, None)
+        infos_actual = buf_actual.glyph_infos
+
+        assert len(infos_actual) == len(infos_expected)
+
+        for i in range(len(infos_expected)):
+            gn_expected = expected.get_glyph_name(infos_expected[i].codepoint)
+            gn_actual = actual.get_glyph_name(infos_actual[i].codepoint)
+
+            assert gn_actual == gn_expected
