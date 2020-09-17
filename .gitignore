@@ -1,6 +1,9 @@
 master.otf
 master.ttf
 current.fpr
-AdobeVFPrototype.otf
-AdobeVFPrototype.ttf
+AdobeVFPrototype*.otf
+AdobeVFPrototype*.ttf
 xtra
+
+.pytest_cache
+__pycache__
