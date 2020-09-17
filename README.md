@@ -57,24 +57,28 @@ listed below.
 
 ### Requirements
 
-To build the **OpenType-CFF2 version** (`AdobeVFPrototype.otf`), you need to have installed the
-[afdko] version 2.8.6 or later.
+- Python 3.6 or later. We recommend _not_ using your system-installed Python if
+   you are using macOS or a Linux system with Python 3 pre-installed. Instead,
+   use either an installer from [Python.org](http://python.org) **or** use
+   [Homebrew](https://brew.sh/) (macOS only).
 
-To build the **TrueType version** (`AdobeVFPrototype.ttf`), you need to have installed [fontmake]
-version 1.9.1 or later.
+- We also recommend the use of a [Python virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
+  
+- Install the requirements with `pip`:
 
-[afdko]: https://github.com/adobe-type-tools/afdko
-[fontmake]: https://github.com/googlei18n/fontmake
+   ```pip3 install -r requirements-dev.txt```
+
 
 ### Build command
+With the requirements installed, you can build with the supplied build script:
 
-macOS and Linux:
+#### macOS and Linux:
 
 ```sh
 sh buildFont.sh
 ```
 
-Windows:
+#### Windows:
 
 ```sh
 cmd buildFont.sh
@@ -95,6 +99,17 @@ Next, `fontmake` is used for building the variable TrueType font.
 
 Finally, `sfntedit` is used for copying/replacing several tables between the
 OTF and TTF fonts.
+
+
+### Testing
+
+A test suite is available to check the built fonts to ensure they were built with
+expected values. You can initiate the tests with:
+
+```pytest tests```
+
+The tests are designed to catch unexpected regressions that might be caused by
+changes in tools or other environment differences.
 
 
 ## Current limitations
