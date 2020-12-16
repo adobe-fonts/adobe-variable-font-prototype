@@ -31,7 +31,7 @@ sed -i '' 's/^/#/' $folder/STAT.fea
 
 # set +e so we have the opportunity to un-hack STAT.fea before exiting if
 # there's a problem with fontmake.
-set +  # 
+set +e 
 # build TTF with fontmake
 fontmake -m "$dsp_file" -o variable --production-names --output-path "$ttf_file"
 fm_status=$?
