@@ -1,0 +1,5 @@
+afdko
+fontmake
+pytest
+requests
+uharfbuzz
