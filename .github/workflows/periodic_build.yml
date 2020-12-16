@@ -7,8 +7,11 @@ name: Periodic Build
 on:
   schedule:
     - cron: '0 4 * * 6'
-  repository_dispatch:
-    types: manual-trigger
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for running workflow'
+        required: true
 
 jobs:
   build:
@@ -16,6 +19,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Log reason (manual run only)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          echo "Reason for triggering: ${{ github.event.inputs.reason }}"
+
       - name: Get latest release with tag
         id: latestrelease
         run: |
