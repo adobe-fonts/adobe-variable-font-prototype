@@ -25,19 +25,9 @@ tx -cff2 +S +b -std "$otf_file" "$folder/.tb_cff2" 2> /dev/null
 # replace CFF2 table with subroutinized version
 sfntedit -a CFF2="$folder/.tb_cff2" "$otf_file" 1> /dev/null
 
-# TEMP HACK until fontTools.feaLib supports STAT
-# comment out STAT feature file which cannot be digested by fontmake
-sed -i '' 's/^/#/' $folder/STAT.fea
-
-# set +e so we have the opportunity to un-hack STAT.fea before exiting if
-# there's a problem with fontmake.
-set +e 
 # build TTF with fontmake
 fontmake -m "$dsp_file" -o variable --production-names --output-path "$ttf_file"
 fm_status=$?
-
-# undo changes to STAT feature file
-sed -i '' 's/#//' $folder/STAT.fea
 
 if [ $fm_status -ne 0 ]
 then
